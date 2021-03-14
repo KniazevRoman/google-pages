@@ -25,6 +25,11 @@ body {
     margin-left: 18px;
 }
 
+.text-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .text-link {
     align-self: center;
     margin-bottom: 2px;
@@ -155,8 +160,9 @@ form {
     height: 36px;
     background-color: rgb(250, 250, 250);
     border-radius: 5px;
-    text-align: center;
-    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 .main-button:hover {
@@ -169,7 +175,7 @@ form {
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    color: rgb(58, 58, 58)
+    color: rgb(58, 58, 58);
 }
 
 .language-section {
@@ -224,4 +230,5 @@ form {
 
 .footer-link:hover {
     cursor: pointer;
+    text-decoration: underline;
 }
