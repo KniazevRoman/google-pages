@@ -64,7 +64,7 @@ body {
     margin-top: 70px;
 }
 
-.google-logo {
+.logo__image {
     width: 272px;
     height: 92px;
     background-image: url(imgs/google_logo.svg);
