@@ -20,17 +20,17 @@ body {
     padding-top: 7px;
 }
 
-.header-item {
+.header__item {
     display: block;
     margin-left: 18px;
 }
 
-.text-link:hover {
+.header__item_text-link:hover {
     cursor: pointer;
     text-decoration: underline;
 }
 
-.text-link {
+.header__item_text-link {
     align-self: center;
     margin-bottom: 2px;
     text-decoration: none;
@@ -40,12 +40,13 @@ body {
     font-size: 13px;
 }
 
-.dots {
+.header__item_dots-svg {
     width: 20px;
     height: 20px;
+    padding-bottom: 3px;
 }
 
-.user-logo {
+.header__item_user-logo {
     width: 32px;
     height: 32px;
     background-color: rgb(173, 119, 94);
