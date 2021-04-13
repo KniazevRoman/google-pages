@@ -17,47 +17,41 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ************
+Header
+************* */
+
 .header {
     display: flex;
-    justify-content: space-between;
     box-sizing: border-box;
-    min-height: 70px;
+    position: relative;
+    height: 70px;
     padding-top: 20px;
 }
 
-.logo-n-search {
-    display: flex;
-}
-
-.logo {
-    margin-left: 10px;
-}
-
-.logo .google-logo {
+.header__logo {
     background-image: url("imgs/google_logo.svg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 150px;
     height: 100%;
+    margin-left: 10px;
 }
 
-.search-form {
+.header__search-form {
     margin-left: 30px;
-}
-
-.input-wrapper {
     position: relative;
     width: 680px;
-    min-height: 45px;
+    height: 45px;
     border: 1px solid #dadada;
     border-radius: 30px;
 }
 
-.input-wrapper:hover {
+.header__search-form:hover {
     box-shadow: 0 2px 7px rgb(211, 211, 211);
 }
 
-.input-wrapper::after {
+.header__search-form::after {
     display: block;
     content: '';
     position: absolute;
@@ -68,7 +62,7 @@ body {
     background-color: #dadada;
 }
 
-.main-input {
+.header__input {
     position: absolute;
     left: 20px;
     top: 12px;
@@ -78,16 +72,25 @@ body {
     color:rgb(61, 61, 61);
 }
 
-.main-input:focus {
+.header__input:focus {
     outline: none;
 }
 
-.clear-button {
+.button {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.header__clear-button {
     position: absolute;
     right: 107px;
     top: 12px;
-    width: 20px;
-    height: 20px;
     text-align: center;
     font-size: 33px;
     line-height: 20px;
@@ -97,39 +100,30 @@ body {
     font-family:'Times New Roman', Times, serif;
 }
 
-.search-form .button:hover {
-    cursor: pointer;
-}
-
-.micro-button {
+.header__micro-button {
     position: absolute;
     right: 55px;
     top: 12px;
-    width: 20px;
-    height: 20px;
     background-image: url('imgs/1200px-Google_mic.svg.png');
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
-.magnifyer-button {
+.header__magnifier-button {
     position: absolute;
     right: 20px;
     top: 14px;
-    width: 20px;
-    height: 20px;
     background-image: url('imgs/google_magnifying_glass.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 
-.user-info {
+.header__user-info {
     display: flex;
+    position: absolute;
+    right: 0;
+    padding-top: 10px;
     align-items: center;
     padding-right: 30px;
 }
 
-.apps-link {
+.header__apps-link {
     display: block;
     width: 22px;
     height: 22px;
@@ -139,7 +133,7 @@ body {
     margin-right: 30px;
 }
 
-.user-logo {
+.header__user-logo {
     display: block;
     width: 30px;
     height: 30px;
@@ -147,12 +141,13 @@ body {
     background-color: rgb(134, 116, 112);
     text-align: center;
     text-decoration: none;
-}
-
-.user-name-letter {
     color:rgb(240, 240, 240);
     line-height: 30px;
 }
+
+/* *********
+Navigation
+********* */
 
 .sub-header {
     width: 100%;
