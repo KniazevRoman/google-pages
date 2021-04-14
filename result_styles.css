@@ -17,6 +17,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.content-wrapper {
+    width: 690px;
+    margin-left: 190px;
+    box-sizing: border-box;
+}
+
 /* ************
 Header
 ************* */
@@ -149,32 +155,29 @@ Header
 Navigation
 ********* */
 
-.sub-header {
+.navigation {
     width: 100%;
+    margin-top: 20px;
     border-bottom: 1px solid #dadada;
     box-sizing: border-box;
 }
 
-.sub-header .content-wrapper {
-    min-height: 55px;
-    max-width: 690px;
-    margin-left: 190px;
+.navigation__content-wrapper {
     display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
 }
 
-.content-wrapper>div {
+.navigation__group {
     display: flex;
     align-items: flex-end;
 }
 
-.sub-header .active {
+.navigation-item_active {
     color:rgb(0, 130, 235);
     border-bottom: 3px solid rgb(0, 130, 235);
 }
 
-.sub-header-item {
+.navigation-item {
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -183,11 +186,11 @@ Navigation
     margin-right: 10px;
 }
 
-.sub-header-item:hover {
+.navigation-item:hover {
     cursor: pointer;
 }
 
-.sub-header-icon {
+.navigation-item__icon {
     width: 14px;
     height: 14px; 
     margin-left: 7px;
@@ -195,36 +198,40 @@ Navigation
     background-size: cover;
 }
 
-.sub-header-caption {
+.navigation-item__caption {
     font-size: 13px;
     height: 20px;
     line-height: 23px;
     margin-left: 7px;
 }
 
-.categories .sub-header-item:nth-child(1) .sub-header-icon {
+.navigation-item:nth-child(1) .navigation-item__icon {
     background-image: url('imgs/google_magnifying_glass.png');
 }
 
-.categories .sub-header-item:nth-child(2) .sub-header-icon {
+.navigation-item:nth-child(2) .navigation-item__icon {
     background-image: url('imgs/news.png');
 }
 
-.categories .sub-header-item:nth-child(3) .sub-header-icon {
+.navigation-item:nth-child(3) .navigation-item__icon {
     background-image: url('imgs/play_button.png');
 }
 
-.categories .sub-header-item:nth-child(4) .sub-header-icon {
+.navigation-item:nth-child(4) .navigation-item__icon {
     background-image: url('imgs/map-pointer.png');
 }
 
-.categories .sub-header-item:nth-child(5) .sub-header-icon {
+.navigation-item:nth-child(5) .navigation-item__icon {
     background-image: url('imgs/landscape.png');
 }
 
-.categories .sub-header-item:nth-child(6) .sub-header-icon {
+.navigation-item:nth-child(6) .navigation-item__icon {
     background-image: url('imgs/dots.png');
 }
+
+/* **********
+Main content
+********** */
 
 .main-content-wrapper {
     min-width: 690px;
