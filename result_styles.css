@@ -456,39 +456,38 @@ Main content
     background-color: rgb(240, 240, 240);
 }
 
-.footer > div {
+.footer__item {
     min-height: 48px;
     padding: 0 30px;
     font-size: 15px;
     color:rgb(140, 140, 140);
 }
 
-.footer-country {
-    display: flex;
-    align-items: center;
+.footer__item_country {
+    line-height: 48px;
 }
 
-.footer-links {
+.footer__item_links {
     border-top: 1px solid #d1d1d1;
     display: flex;
     justify-content: space-between;
 }
 
-.footer-links-side {
+.footer__side {
     display: flex;
 }
 
-.footer-link {
+.footer__link {
     min-height: 100%;
     display: flex;
     align-items: center;
     padding-right: 25px;
 }
 
-.footer-link:last-child {
+.footer__link:last-child {
     padding-right: 0;
 }
 
-.footer-link:hover {
+.footer__link:hover {
     cursor: pointer;
 }
