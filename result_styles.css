@@ -233,17 +233,11 @@ Navigation
 Main content
 ********** */
 
-.main-content-wrapper {
-    min-width: 690px;
-    margin-left: 190px;
-    padding: 10px;
+.search-output {
+    margin-top: 20px;
 }
 
-.main-content-wrapper>div {
-    width: 650px;
-}
-
-.counter {
+.search-output__counter {
     padding-top: 5px;
     font-size: 14px;
 }
@@ -253,20 +247,20 @@ Main content
     margin: 20px 0;
 }
 
-.found-link {
+.found-item__link {
     margin-bottom: 5px;
 }
 
-.found-link:hover {
+.found-item__link:hover {
     cursor: pointer;
 }
 
-.found-link span {
+.found-item__link span {
     position: relative;
     font-size: 15px;
 }
 
-.found-link span::after {
+.found-item__link span::after {
     content: "";
     position: absolute;
     right: -15px;
@@ -278,18 +272,18 @@ Main content
     background-size: cover;
 }
 
-.found-title {
+.found-item__title {
     color: rgb(20, 20, 177);
     font-size: 19px;
     margin-bottom: 5px;
 }
 
-.found-title:hover {
+.found-item__title:hover {
     cursor: pointer;
     text-decoration: underline;
 }
 
-.found-desc {
+.found-item__desc {
     font-size: 15px;
     line-height: 20px;
 }
@@ -299,23 +293,23 @@ Main content
     border-radius: 10px;
 }
 
-.also-title {
+.also-ask__title {
     font-size: 20px;
     padding: 10px 15px 10px;
     border-bottom: 1px solid #d1d1d1;
 }
 
-.also-item {
+.also-ask__item {
     position: relative;
     padding: 15px 15px 15px;
     border-bottom: 1px solid #d1d1d1;
 }
 
-.also-item:last-child {
+.also-ask__item:last-child {
     border-bottom: none;
 }
 
-.also-item::after {
+.also-ask__item::after {
     content: "";
     display: block;
     position: absolute;
@@ -328,7 +322,7 @@ Main content
     background-repeat: no-repeat;
 }
 
-.also-item:hover {
+.also-ask__item:hover {
     cursor: pointer;
 }
 
@@ -382,35 +376,35 @@ Main content
     font-size: 33px;
 }
 
-.letter {
+.paginator__letter {
     text-align: center;
 }
 
-.g-letter {
+.paginator__letter_g {
     color:rgb(24, 111, 226);
 }
 
-.o-letter {
+.paginator__letter_o {
     color: rgb(255, 208, 77)
 }
 
-.l-letter {
+.paginator__letter_l {
     color: rgb(0, 167, 56)
 }
 
-.e-letter {
+.paginator__letter_e {
     color: #db3d3d;
 }
 
-.active-letter {
+.paginator__letter_active {
     color: #db3d3d;
 }
 
-.paginator-table {
+.paginator__table {
     border-collapse: collapse;
 }
 
-.pages-item {
+.paginator__page {
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
@@ -418,12 +412,12 @@ Main content
     color:rgb(24, 111, 226);
 }
 
-.pages-item:hover {
+.paginator__page:hover {
     cursor: pointer;
     text-decoration: underline;
 }
 
-.active-page {
+.paginator__page_active {
     color:rgb(61, 61, 61);
 }
 
@@ -440,7 +434,7 @@ Main content
     text-decoration: underline;
 }
 
-.blue-arrow {
+.next-button__arrow {
     width: 20px;
     height: 20px;
     background-image: url("imgs/blue-arrow.png");
@@ -450,7 +444,7 @@ Main content
     margin-bottom: 10px;
 }
 
-.next-button-caption {
+.next-button__caption {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: normal;
